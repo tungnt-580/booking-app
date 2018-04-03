@@ -37,5 +37,5 @@ export const availableTimeAPI = {
 
 function getAvailableTimeFromDate(day, month, year) {
   const add0 = (number) => (number < 10 ? '0' : '') + number
-  return availableTime[add0(month) + add0(day) + add0(year % 100)]
+  return availableTime[add0(month) + add0(day) + add0(year % 100)] || []
 }

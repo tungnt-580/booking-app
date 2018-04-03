@@ -11,7 +11,6 @@ export default class TimeStep extends Component {
     const { date } = this.props
 
     if (date) {
-
       const { day, month, year } = date
 
       availableTimeAPI.getByDate(day, month, year)
